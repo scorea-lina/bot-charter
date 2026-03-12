@@ -2,6 +2,16 @@
 
 This document contains HomeDesign-specific operating rules that are *stricter* than the org-wide defaults.
 
+## 0) Concrete Discord channels (canonical)
+- #hd-pm: <#1477066552439341137>
+- EngineerBot (engineering / PRs / deploys): <#1478814881598799872>
+- DesignerBot (design / UX decisions): <#1478814583732043946>
+- TesterBot (end-to-end testing reports): <#1479584904382779512>
+- Cross-functional collab: <#1478801538314145893>
+
+**Channel discipline:** never ask a bot for work outside its channel; relay context across channels explicitly.
+
+
 ## 1) Ping cadence (strict)
 
 ### ACK SLA
@@ -42,3 +52,23 @@ This document contains HomeDesign-specific operating rules that are *stricter* t
   - credentials/access you cannot obtain
   - high-risk approvals
   - explicit product decisions
+
+## 5) Release rule (HomeDesign)
+- Default unless explicitly overridden per PR: **QA PASS → merge PR → deploy to prod → post prod URL + confirmation in #hd-pm**.
+- If “prod” is ambiguous (no canonical prod URL/domain), ask in #hd-pm before deploying.
+
+## 6) Deployment autonomy (HomeDesign)
+- If a change is:
+  - already merged to `main`, and
+  - additive/low-risk (ops/cron/status endpoints, bugfixes), and
+  - has no pending QA gate,
+  then **deploy to prod** without asking.
+- After deploying, post in #hd-pm:
+  - what shipped (PR/commit)
+  - prod URL / underlying deploy
+  - any follow-up verification step
+- Ask before deploying when:
+  - schema migration is involved
+  - user-facing behavior changes materially
+  - required secrets/permissions are missing
+  - rollback risk is unclear
