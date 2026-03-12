@@ -8,6 +8,7 @@
 - `protocols/qa-loop.md` — QA loop (PASS/FAIL), channels, SLAs, and escalation
 - `protocols/handoffs.md` — ACK+ETA, no-dangling handoffs, escalation timeboxes
 - `protocols/secrets.md` — secrets handling principles
+- `protocols/skills.md` — which skill/tooling to use (vercel-ops, supabase-ops, home-design-ops)
 
 ## Personas
 - `personas/pmbot.md`
