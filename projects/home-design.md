@@ -72,3 +72,7 @@ This document contains HomeDesign-specific operating rules that are *stricter* t
   - user-facing behavior changes materially
   - required secrets/permissions are missing
   - rollback risk is unclear
+
+## 7) Pre-provisioned access (don’t ask, verify)
+- Assume this host has **Vercel** and **Supabase** CLIs authenticated for HomeDesign.
+- Before claiming you’re blocked on access, run the required preflight checks (see `protocols/skills.md`) and paste the exact error.

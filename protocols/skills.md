@@ -48,3 +48,19 @@ Owner: HomeDesign operational knowledge + project-specific playbooks.
 - Never ask humans to paste secrets into chat.
 - Prefer local secret files + CLI tooling.
 - If a secret needs to be created/edited on disk, do it locally with restrictive permissions.
+
+## Pre-provisioned access (default assumption)
+For supported projects, assume the host already has CLIs authenticated (e.g., Supabase + Vercel).
+
+**Rule:** do *not* ask “do we have access?” until you've attempted the relevant CLI and captured the exact error.
+
+### Required preflight before claiming blocked
+- **Vercel:** run `vercel whoami` (or `vercel projects ls`)
+- **Supabase:** run `supabase projects list` (or the project-specific equivalent)
+
+If the command succeeds: proceed with the task.
+If it fails: report the exact error + ask for the *minimum* missing credential/permission.
+
+### Capability self-check (capcheck)
+If unsure, run `python3 tools/capcheck.py` (in the OpenClaw workspace) and paste its results (never paste secrets).
+
