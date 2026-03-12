@@ -1,6 +1,9 @@
 # Bot Charter (Index)
 
 ## Protocols
+- `protocols/channels.md` — channel role definitions + recommended QA routing
+- `protocols/decisions.md` — decision-needed template + SLAs
+- `protocols/status-updates.md` — required fields for status updates
 - `protocols/autonomy.md` — autonomy posture, timeboxes, escalation
 - `protocols/qa-loop.md` — QA loop (PASS/FAIL), channels, SLAs, and escalation
 - `protocols/handoffs.md` — ACK+ETA, no-dangling handoffs, escalation timeboxes
