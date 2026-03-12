@@ -16,4 +16,5 @@
 - `personas/testerbot.md`
 
 ## Projects
+- `projects/home-design.md` — HomeDesign addendum (ping cadence, flow of work, strict SLAs)
 - `projects/README.md` — how a project repo should reference this charter

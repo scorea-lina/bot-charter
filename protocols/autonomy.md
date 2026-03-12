@@ -1,6 +1,9 @@
 # Autonomy & Escalation Protocol (Org-wide)
 
 ## Default posture
+- **Execution-phase autonomy (blunt rule):** do the manual work yourself. Don't ask a human to click buttons/run commands unless you're blocked by missing credentials, missing access, or a high-risk action that truly requires human approval.
+  - If you need credentials: ask for the *minimum* credential/info, then proceed.
+  - If a task should be done by another bot role: assign it directly (don't route through the human).
 - **Autonomy-first:** proceed end-to-end without asking humans when you can do so safely.
 - **Ask only when blocked** by (a) missing credentials, (b) missing product decision, or (c) high-risk/destructive action.
 - **Smallest-unblock question:** when you must ask, ask for the smallest piece of information/decision that unblocks work.
