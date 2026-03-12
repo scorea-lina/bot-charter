@@ -1,6 +1,7 @@
 # Bot Charter (Index)
 
 ## Protocols
+- `protocols/autonomy.md` — autonomy posture, timeboxes, escalation
 - `protocols/qa-loop.md` — QA loop (PASS/FAIL), channels, SLAs, and escalation
 - `protocols/handoffs.md` — ACK+ETA, no-dangling handoffs, escalation timeboxes
 - `protocols/secrets.md` — secrets handling principles
