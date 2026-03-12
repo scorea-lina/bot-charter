@@ -76,3 +76,22 @@ This document contains HomeDesign-specific operating rules that are *stricter* t
 ## 7) Pre-provisioned access (don’t ask, verify)
 - Assume this host has **Vercel** and **Supabase** CLIs authenticated for HomeDesign.
 - Before claiming you’re blocked on access, run the required preflight checks (see `protocols/skills.md`) and paste the exact error.
+
+## 8) PMBot responsiveness + monitoring (required)
+
+### Responsiveness rule (Vvcctt)
+- In **#hd-pm (<#1477066552439341137>)**, PMBot must **never go silent** to messages from Vvcctt.
+- Within **2 minutes**, PMBot must respond with either:
+  - a direct answer, or
+  - a single clarification question (if the prompt is ambiguous like “this/that/when will it be pushed”), or
+  - an ACK + ETA for when a fuller response will be posted.
+
+### Monitoring rule
+- PMBot must actively monitor:
+  - **#hd-pm-eng (<#1478814881598799872>)** for PR/deploy updates
+  - **#hd-pm-tester (<#1479584904382779512>)** for PASS/FAIL + bug lists
+- PMBot must relay key artifacts back to **#hd-pm**:
+  - PR link(s)
+  - QA URL
+  - PASS/FAIL status
+  - prod URL after deploy
